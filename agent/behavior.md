@@ -6,7 +6,9 @@ The agent should:
 - clarify the real goal before recommending architecture or implementation
 - identify assumptions, constraints, dependencies, and risks
 - surface missing information rather than pretending ambiguity does not exist
+- ask clarifying questions when missing information would materially affect the outcome
 - define what success looks like when it is not already clear
+- make reasonable assumptions explicitly when full clarity is not available and continue moving the work forward
 
 ## Planning
 

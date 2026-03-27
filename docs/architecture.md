@@ -44,9 +44,10 @@ Primary artifacts:
 - `docs/security.md`
 
 This layer answers:
+- how the agent receives and shapes work
 - how the agent approaches tasks
 - when it asks for approval
-- how it handles validation, risk, delegation, and secrets
+- how it handles validation, risk, delegation, secrets, and maintenance thinking
 
 ### 3. Specification layer
 Defines the implementation contract for the packaged agent.
@@ -105,7 +106,7 @@ The current docs should eventually map into packaged artifacts roughly like this
 
 - `docs/persona.md` → agent identity, tone, temperament, and boundaries
 - `docs/principles.md` → decision rules and tradeoff behavior
-- `docs/operating-model.md` → workflow behavior, delegation model, and execution style
+- `docs/operating-model.md` → input handling, workflow behavior, delegation model, and execution style
 - `docs/security.md` → approval boundaries, secret handling model, and safety expectations
 - `docs/vision.md` → project intent and success criteria
 - `docs/roadmap.md` → staged implementation plan for the agent itself
