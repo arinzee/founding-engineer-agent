@@ -31,9 +31,12 @@ Before starting build execution, the FE should usually have enough clarity on:
 - architecture direction
 - implementation sequence
 - deployment assumptions at a broad level
+- environment readiness for build, test, and local runtime work
 
 The FE does not need every future feature fully specified.
 It does need sufficient readiness to build safely and coherently.
+
+Environment readiness should be checked using the model in `docs/environment-readiness-model.md` when the stack or execution context makes local tooling/runtime assumptions important.
 
 ## Build execution stages
 

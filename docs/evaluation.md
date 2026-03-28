@@ -13,6 +13,7 @@ The Founding Engineer agent should be evaluated on whether it consistently:
 - asks for the right onboarding input and normalizes it well
 - shapes requirements into MVP, backlog, and design-ready work
 - preserves continuity across lifecycle stages
+- checks environment/tooling readiness early enough for the current stage
 - recommends practical and phased plans
 - avoids unnecessary complexity
 - makes trust, permission, and secret boundaries explicit
