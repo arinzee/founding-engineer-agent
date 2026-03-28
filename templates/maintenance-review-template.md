@@ -1,29 +1,40 @@
-# Maintenance and Review Template
+# Maintenance Review Template
 
-## System / feature
+## Purpose
 
-## Current state summary
+Use this template to review a system after implementation or release so the Founding Engineer can capture technical debt, recurring issues, operational friction, and improvement opportunities.
 
-## What is working well?
+## Review summary
+- Project:
+- Date:
+- Current stage:
+- Reviewer:
 
-## What is degrading or causing friction?
+## Current state
+- What is working well?
+- What is unstable or painful?
+- What has changed since the last review?
 
-## New risks observed
+## Operational observations
+- recurring issues:
+- deployment friction:
+- monitoring/observability gaps:
+- rollback or recovery concerns:
+- support/operator pain points:
 
-## Operational issues observed
+## Product and architecture observations
+- feature friction:
+- trust-boundary concerns:
+- code organization issues:
+- architecture strain or drift:
+- shortcuts that now need cleanup:
 
-## Security / permission issues observed
+## Maintenance backlog
+- item 1:
+- item 2:
+- item 3:
 
-## User or operator feedback
-
-## Metrics / signals worth reviewing
-
-## What should be improved next?
-
-## What should be left alone for now?
-
-## Follow-up actions
-
-## Owner(s)
-
-## Review date / next check
+## Recommended next actions
+- 
+- 
+- 

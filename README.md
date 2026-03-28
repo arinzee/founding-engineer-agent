@@ -1,38 +1,70 @@
 # Founding Engineer Agent Template
 
-A documentation-first template for an OpenClaw agent that represents a strong founding engineer persona: someone who can take an ambiguous idea from concept to architecture, implementation, deployment, and iteration with sound product, engineering, and operational judgment.
+A documentation-first OpenClaw agent package for a startup-caliber Founding Engineer: an agent that can take messy requirements and carry work through onboarding, requirements shaping, MVP definition, architecture, implementation planning, build execution, deployment, and ongoing iteration.
 
 ## Purpose
 
-This repo is the foundation for a reusable OpenClaw-based agent that behaves like an end-to-end founding engineer.
+This repo is the foundation for a reusable OpenClaw-based Founding Engineer agent.
 
 The goal is to create an agent that can:
-- turn vague product ideas into concrete plans
-- design systems and trust boundaries
-- choose pragmatic tech stacks
-- implement across backend, frontend, infra, and operations
+- onboard real projects without requiring a perfect spec
+- turn vague requirements into structured work such as initiatives, epics, stories, MVP scope, and backlog
+- design systems, trust boundaries, and deployment models
+- guide or perform implementation across backend, frontend, orchestration, infra, and operations
 - deploy safely and maintainably
-- handle security, secrets, and configuration thoughtfully
-- prefer phased delivery over unnecessary complexity
+- preserve project continuity across the full lifecycle
+- use subagents deliberately as part of a compressed real-world team model
 
-## Initial documents
+## What the repo now contains
 
-- `docs/persona.md` — who the Founding Engineer agent is
-- `docs/principles.md` — decision principles and default engineering philosophy
-- `docs/operating-model.md` — how the agent should work in practice
-- `docs/vision.md` — what this repo is trying to become
-- `docs/architecture.md` — how the agent should be structured as a real OpenClaw artifact
-- `docs/security.md` — security posture and design expectations
-- `docs/roadmap.md` — phased plan from docs to working agent
+### Core documentation
+- persona, principles, operating model, security, and agent spec
+- lifecycle, project-state, requirements-shaping, subagent, build-execution, and operations models
+
+### Runtime-facing agent artifacts
+- `agent/identity.md`
+- `agent/behavior.md`
+- `agent/defaults.md`
+- `agent/prompt.md`
+
+### Templates
+Reusable scaffolds for:
+- project onboarding
+- project state
+- decision logs
+- milestone planning
+- release readiness
+- maintenance review
+- implementation and system design work
+
+### Reference project work
+- `projects/python-tutor/` as a concrete end-to-end FE test case spanning intake through execution handoff
 
 ## Intended use
 
-This template is meant to become:
-- a reusable agent persona
-- a reference architecture and behavior pattern
-- a base for building product-oriented OpenClaw agents
-- the design foundation for larger systems, including secure multi-agent applications
+This package is meant to become:
+- a reusable Founding Engineer persona and operating system for OpenClaw
+- a reference model for turning real project input into design, build, deploy, and maintain workflows
+- a practical testbed for validating FE behavior on real project packs such as Python Tutor
 
-## Status
+## Current status
 
-Initial documentation draft.
+The package now has a much stronger lifecycle and operating backbone.
+
+It is strongest in:
+- onboarding and shaping
+- MVP and architecture definition
+- trust-boundary and deployment thinking
+- implementation planning and execution modeling
+
+Remaining hardening work is mostly operational polish and repeated-use scaffolding, not core concept formation.
+
+## Best starting points
+
+If you are new to the repo, start with:
+- `README.md`
+- `PACKAGE.md`
+- `USAGE.md`
+- `docs/agent-spec.md`
+- `docs/lifecycle-model.md`
+- `docs/project-workflow.md`

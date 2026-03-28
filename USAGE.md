@@ -1,103 +1,110 @@
 # Usage Guide
 
-## What this repo is right now
+## What this repo is now
 
-This repository is currently a documentation-backed Founding Engineer agent package.
+This repository is a documentation-backed Founding Engineer agent package with a much clearer end-to-end operating model.
 
 It provides:
 - source-of-truth concept and specification docs
 - runtime-facing agent artifacts
-- representative examples
-- reusable templates
-
-It does not yet provide a fully automated OpenClaw-native installation flow or a finalized packaging manifest.
+- lifecycle, shaping, execution, and operations models
+- reusable templates for real project work
+- a realistic reference project pack in `projects/python-tutor/`
 
 ## Who this is for
 
 This repo is useful for people who want to:
-- define a strong Founding Engineer-style agent
-- reuse the persona and operating model in OpenClaw or related systems
-- evaluate whether an agent behaves like a dependable end-to-end technical partner
-- use the examples and templates to support real planning, design, and review work
+- define or refine a Founding Engineer-style agent
+- use an FE operating model inside OpenClaw
+- evaluate whether an agent behaves like a dependable end-to-end product and technical partner
+- shape real projects from messy requirements into MVP, backlog, design, and execution
 
 ## How to use the repo
 
-### 1. Understand the design intent
+### 1. Understand the package intent
 Start with:
 - `README.md`
 - `PACKAGE.md`
-- `docs/vision.md`
-
-These explain what the project is for and how the package is intended to evolve.
-
-### 2. Read the behavioral source of truth
-Then read:
-- `docs/persona.md`
-- `docs/principles.md`
-- `docs/operating-model.md`
-- `docs/security.md`
 - `docs/agent-spec.md`
 
-These define who the Founding Engineer is, how it should think, how it should operate, and what the packaged agent must do.
+These explain what the package is for and what the Founding Engineer is expected to do.
 
-### 3. Use the runtime-facing artifacts
-Use:
+### 2. Understand the lifecycle backbone
+Then read:
+- `docs/lifecycle-model.md`
+- `docs/project-workflow.md`
+- `docs/project-state-model.md`
+- `docs/requirements-shaping-model.md`
+
+These define how the FE moves from intake through shaping, design, build, deploy, and maintenance.
+
+### 3. Understand the runtime behavior
+Then read:
 - `agent/identity.md`
 - `agent/behavior.md`
 - `agent/defaults.md`
 - `agent/prompt.md`
 
-These are the most relevant files when you want to adapt the package into a real runtime agent configuration.
+These are the most relevant files when adapting the package into a real runtime agent configuration.
 
-### 4. Study examples
+### 4. Use the templates in real work
+Use templates such as:
+- `templates/project-onboarding-template.md`
+- `templates/project-state-template.md`
+- `templates/decision-log-template.md`
+- `templates/milestone-plan-template.md`
+- `templates/release-readiness-template.md`
+- `templates/maintenance-review-template.md`
+
+These help operationalize the FE lifecycle model.
+
+### 5. Validate the package against a real project
 Use:
-- `examples/architecture-spec-example.md`
-- `examples/phased-plan-example.md`
-- `examples/security-review-example.md`
+- `projects/python-tutor/`
 
-These show the shape of outputs the Founding Engineer should produce.
+This project pack shows how the FE can be exercised across:
+- intake
+- boundary modeling
+- MVP definition
+- architecture
+- implementation planning
+- deployment modeling
+- execution handoff
 
-### 5. Reuse templates
-Use:
-- `templates/system-design-template.md`
-- `templates/implementation-plan-template.md`
-- `templates/risk-register-template.md`
+## Practical usage pattern
 
-These are reusable scaffolds for real Founding Engineer work.
-
-## Suggested workflow for using this package
-
-A practical workflow is:
-1. use the docs to understand and refine the persona
-2. use the `agent/` files to define runtime behavior
-3. use the examples to evaluate output quality
-4. use the templates in real project work
-5. refine the package based on failure modes observed in real usage
+A practical workflow for using the package is:
+1. onboard a project using the onboarding template
+2. shape requirements into initiatives, epics, stories, MVP, and backlog
+3. define architecture and trust boundaries
+4. define implementation milestones and slices
+5. guide or perform build execution
+6. assess deployment and release readiness
+7. continue with maintenance and feature workflow
 
 ## How to evaluate whether it is working
 
 A good Founding Engineer output should:
 - clarify ambiguity instead of hiding it
-- recommend practical, phased plans
+- ask for the right minimum input
+- turn messy requirements into structured work
+- preserve continuity across lifecycle stages
 - make trust and permission boundaries explicit
-- design with deployment and rollback in mind
-- include validation and delivery confidence thinking
+- design with deployment, rollback, and maintenance in mind
 - avoid unnecessary complexity
 - feel like dependable technical judgment, not generic code generation
 
 ## Current limitations
 
-Right now this repo does not yet include:
+This repo still does not yet include:
 - a finalized OpenClaw packaging manifest
-- executable skills or code-backed automation
 - automated evaluation harnesses
-- a broad library of examples
+- executable FE skills or automation
+- a broad set of project packs beyond the Python Tutor reference
 
-## Recommended next additions
+## Recommended next use
 
-The next useful additions are likely:
-- `examples/response-style-example.md`
-- `templates/deployment-plan-template.md`
-- `docs/evaluation.md`
-
-These would make the package easier to evaluate and use in real delivery work.
+The package is now strong enough to:
+- continue validation against real project work
+- guide a real implementation repo bootstrap
+- support a project like Python Tutor moving from planning into build execution

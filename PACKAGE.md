@@ -4,7 +4,7 @@
 
 This repository defines a documentation-backed Founding Engineer agent package for OpenClaw.
 
-It is intended to capture not just a persona, but a reusable operating model for an agent that can turn ambiguous product and technical ideas into secure, maintainable, deployable systems.
+It is intended to capture not just a persona, but a reusable operating system for an agent that can turn ambiguous product and technical ideas into structured project work, secure designs, implementation plans, deployable systems, and ongoing operational support.
 
 ## What this repo contains
 
@@ -14,7 +14,8 @@ Source-of-truth concept and specification documents.
 These define:
 - who the agent is
 - how it should think
-- how it should work
+- how it should work across the lifecycle
+- how it should handle onboarding, shaping, design, build, deployment, and maintenance
 - how it should handle security, validation, and delegation
 - what the packaged agent must be
 
@@ -27,11 +28,20 @@ These define:
 - `defaults.md` — the standard choices it should prefer
 - `prompt.md` — the distilled runtime directive for agent behavior
 
-### `examples/`
-Representative example outputs that show the style and shape of work this agent should produce.
-
 ### `templates/`
-Reusable scaffolds for common Founding Engineer deliverables.
+Reusable scaffolds for common Founding Engineer deliverables, including:
+- project onboarding
+- project state tracking
+- decision logging
+- milestone planning
+- release readiness
+- maintenance review
+
+### `projects/`
+Reference project packs used to validate the package in realistic end-to-end work.
+
+Current primary example:
+- `projects/python-tutor/`
 
 ## Source of truth
 
@@ -39,7 +49,7 @@ The intended source-of-truth order is:
 1. `docs/`
 2. `docs/agent-spec.md`
 3. `agent/`
-4. `examples/` and `templates/`
+4. `projects/`, `examples/`, and `templates/`
 
 That means runtime artifacts should be derived from the documentation and specification layers, not invented independently.
 
@@ -48,28 +58,29 @@ That means runtime artifacts should be derived from the documentation and specif
 Use this repository when you want to:
 - define or refine a Founding Engineer-style agent
 - package a strong engineering persona for OpenClaw
-- create reusable planning, design, and review scaffolds
-- evaluate whether an agent is behaving like a dependable end-to-end technical partner
+- onboard and shape real projects from messy requirements
+- evaluate whether an agent behaves like a dependable end-to-end technical partner
+- validate the FE model against realistic product work
 
 ## Design intent
 
 This package is designed to emphasize:
 - practical system thinking
+- structured onboarding and requirements shaping
 - phased delivery
 - strong security and trust boundaries
 - deployment and operational realism
 - validation and delivery confidence
-- responsible use of delegation and automation
+- responsible use of delegation and subagents
+- continuity of project state across the lifecycle
 
-## Not yet included
+## Current limitations
 
-This repository does not yet include:
+This repository still does not yet include:
 - a finalized OpenClaw-native packaging manifest
-- executable skill implementations
-- automated tests for the package itself
-- a library of domain-specific examples
-
-Those can be added later once the behavioral core is stable.
+- automated evaluation harnesses
+- executable skills or code-backed automation for the FE package itself
+- a broad library of domain-diverse project packs
 
 ## Maintenance rule
 
