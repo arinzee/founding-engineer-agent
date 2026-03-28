@@ -14,6 +14,7 @@ New features should follow the same reasoning pattern as MVP work:
 - shaping
 - design
 - delivery planning
+- execution and release thinking
 - deployment and maintenance thinking
 
 But the depth should be proportional to the size, risk, and architectural impact of the change.
@@ -26,7 +27,10 @@ The intended feature workflow is:
 3. scoped feature shaping
 4. design/update decision
 5. implementation and deployment planning
-6. post-release review when needed
+6. execution and release handling as needed
+7. post-release review when needed
+
+Feature work should be understood as an extension of the lifecycle and project-state models, not a separate disconnected process.
 
 ## Stage 1 — Feature intake
 
@@ -41,7 +45,7 @@ A feature request should usually include:
 - whether it is net-new, an extension, a fix, or a refactor
 - any constraints or non-negotiables
 
-The input can still be messy. The Founding Engineer should normalize it.
+The input can still be messy. The Founding Engineer should normalize it and relate it back to the existing project state, backlog, architecture decisions, and operational context.
 
 ## Stage 2 — Impact clarification
 
@@ -67,10 +71,11 @@ Turn the feature into a bounded delivery slice.
 
 Depending on complexity, the Founding Engineer may produce:
 - a small problem intake
-- one or more user stories
+- one or more user stories or capability slices
 - updated acceptance criteria
 - an MVP-vs-later feature cut
 - an updated risk note
+- backlog updates and dependency notes
 
 Not every feature needs a full initiative/epic breakdown.
 
@@ -103,8 +108,21 @@ The Founding Engineer should produce enough guidance to answer:
 - whether rollout should be staged
 - whether infra or deployment changes are required
 - what is explicitly deferred
+- how project state and backlog priority should be updated
 
-## Stage 6 — Post-release review when needed
+## Stage 6 — Execution and release handling as needed
+
+### Goal
+Carry the feature through implementation, validation, and release activity at the level of rigor justified by the change.
+
+This may include:
+- bounded implementation planning
+- subagent use for focused execution or review
+- release-readiness checks
+- deployment review
+- rollback notes for risky changes
+
+## Stage 7 — Post-release review when needed
 
 ### Goal
 Ensure the feature behaves as intended and does not create hidden issues.
@@ -202,6 +220,7 @@ A good Founding Engineer response to a feature request should usually clarify:
 - whether it changes trust boundaries, architecture, or deployment
 - what level of process/rigor is needed
 - what the next artifact or implementation step should be
+- how backlog and project state should change
 
 ## Summary
 

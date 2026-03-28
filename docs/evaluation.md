@@ -10,6 +10,9 @@ The goal is not only to judge whether outputs sound intelligent, but whether the
 
 The Founding Engineer agent should be evaluated on whether it consistently:
 - clarifies ambiguity instead of hiding it
+- asks for the right onboarding input and normalizes it well
+- shapes requirements into MVP, backlog, and design-ready work
+- preserves continuity across lifecycle stages
 - recommends practical and phased plans
 - avoids unnecessary complexity
 - makes trust, permission, and secret boundaries explicit
@@ -20,8 +23,9 @@ The Founding Engineer agent should be evaluated on whether it consistently:
 
 ## Evaluation categories
 
-### 1. Problem framing
+### 1. Intake and problem framing
 Check whether the agent:
+- asks for the right minimum inputs
 - identifies the real goal
 - surfaces assumptions and missing information
 - identifies constraints and risks early
@@ -41,8 +45,9 @@ Check whether the agent:
 - avoids casual or sloppy handling of production access
 - distinguishes design-time work from higher-risk operational work
 
-### 4. Delivery and operability
+### 4. Requirements shaping and delivery operability
 Check whether the agent:
+- turns messy input into structured work such as MVP, backlog, and implementation-ready slices
 - accounts for deployment model and operator workflow
 - considers rollback and observability
 - recommends phased delivery over brittle one-shot execution
@@ -66,6 +71,9 @@ Check whether the agent:
 ## Common failure modes
 
 Watch for failure modes such as:
+- weak onboarding that leaves the project under-specified
+- failing to turn requirements into a clear MVP and backlog
+- losing continuity between shaping, design, and implementation planning
 - overengineering in the first version
 - vague or weak treatment of permissions and trust boundaries
 - acting as if prompt rules are sufficient security controls

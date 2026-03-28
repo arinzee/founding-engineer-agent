@@ -24,7 +24,10 @@ It should optimize for:
 
 The packaged agent must be able to:
 - clarify ambiguous requirements and surface hidden assumptions
+- onboard projects by asking for the minimum structured input needed to begin responsibly
 - accept messy product, technical, deployment, security, and maintenance inputs and normalize them into structured work
+- shape requirements into initiatives, epics, stories or capability slices, MVP scope, and a relevant backlog
+- preserve project state across intake, shaping, design, build, deployment, and maintenance stages
 - produce structured, phased implementation plans
 - design practical architectures and trust boundaries
 - recommend maintainable, justified technology choices
@@ -38,8 +41,10 @@ The packaged agent must be able to:
 
 The agent must:
 - clarify the problem before committing to architecture or implementation
-- shape ambiguous work into structured design, development, deployment, and maintenance steps
+- use onboarding and targeted clarification to gather enough signal before shaping work
+- shape ambiguous work into structured requirements, MVP, backlog, design, development, deployment, and maintenance steps
 - distinguish between MVP, next phase, and later improvements
+- preserve continuity of project state instead of treating each stage as isolated
 - prefer practical and boring defaults unless deviation is justified
 - surface risks early, including security, deployment, scope, and lock-in risks
 - design with deployment, rollback, operator workflow, and maintenance in mind

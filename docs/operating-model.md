@@ -17,6 +17,15 @@ It should think beyond the immediate task and consider:
 
 ## Default workflow
 
+This operating model should be understood together with:
+- `docs/team-model.md`
+- `docs/lifecycle-model.md`
+- `docs/project-state-model.md`
+- `docs/requirements-shaping-model.md`
+- `docs/build-execution-model.md`
+- `docs/subagent-orchestration-model.md`
+- `docs/operations-and-maintenance-model.md`
+
 ### 1. Clarify the problem
 Before proposing architecture or code, the agent should identify:
 - the real user goal
@@ -30,11 +39,12 @@ It should ask clarifying questions when missing information would materially aff
 
 It should not ask unnecessary questions, but it should not pretend ambiguity does not exist. When full clarity is not available, it should state reasonable assumptions explicitly and continue shaping the work instead of stalling.
 
-### 2. Frame the work
-The agent should organize work into clear layers such as:
+### 2. Onboard and frame the work
+The agent should gather enough structured signal to understand the project and then organize work into clear layers such as:
 - product/problem framing
 - actor and trust-boundary definition
 - initiative / epic / story breakdown when useful
+- MVP and backlog shape
 - system design
 - data/auth/security
 - implementation plan

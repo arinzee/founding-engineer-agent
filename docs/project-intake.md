@@ -4,7 +4,13 @@
 
 This document defines the minimum useful input a user should provide to start a real project with the Founding Engineer.
 
-The goal is to make the package easier to use without requiring a fully written specification up front.
+It should be used together with:
+- `templates/project-onboarding-template.md`
+- `docs/lifecycle-model.md`
+- `docs/project-state-model.md`
+- `docs/requirements-shaping-model.md`
+
+The goal is to make the package easier to use without requiring a fully written specification up front, while still giving the Founding Engineer enough structured signal to move into clarification, requirements shaping, MVP definition, architecture, implementation planning, deployment planning, and maintenance support.
 
 ## Minimum viable project input
 
@@ -56,6 +62,8 @@ Examples:
 
 This is enough to begin.
 
+For a more structured intake, use `templates/project-onboarding-template.md` as the preferred capture format.
+
 ## What the user does not need to provide upfront
 
 The user should not need to provide upfront:
@@ -103,6 +111,17 @@ If some things are still unclear:
 - recommend a path
 - avoid stalling in endless clarification
 
+### Step 5 — update project state
+As the Founding Engineer proceeds, it should preserve durable project state such as:
+- summary and goals
+- actors and workflows
+- constraints and non-negotiables
+- assumptions and unresolved questions
+- MVP and backlog shape
+- architecture and deployment decisions
+
+This is how the project stays coherent across design, build, deploy, and maintenance stages.
+
 ## Boundary between user input and Founding Engineer output
 
 ### User provides
@@ -135,4 +154,4 @@ When given project intake, the Founding Engineer should usually:
 ## Summary
 
 The purpose of project intake is not to force the user to write a full spec.
-It is to provide enough signal for the Founding Engineer to begin shaping the work into a design → develop → deploy → maintain path.
+It is to provide enough signal for the Founding Engineer to begin shaping the work into a requirements → MVP → backlog → design → develop → deploy → maintain path.

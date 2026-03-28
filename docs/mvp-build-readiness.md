@@ -4,6 +4,12 @@
 
 This document defines when the Founding Engineer has enough clarity to recommend starting MVP implementation.
 
+It should be read together with:
+- `docs/lifecycle-model.md`
+- `docs/requirements-shaping-model.md`
+- `docs/build-execution-model.md`
+- `docs/project-state-model.md`
+
 The goal is to prevent two common failure modes:
 - starting to build too early with unsafe or vague foundations
 - delaying unnecessarily because the project is not fully specified in every detail
@@ -39,6 +45,7 @@ The Founding Engineer should understand enough about:
 If the system has meaningful trust boundaries, those must be explicit before implementation starts.
 
 ## 3. MVP scope is defined
+The FE should be able to point to a shaped MVP cut, not just a loose statement of intent.
 There should be a clear distinction between:
 - what is in the MVP
 - what is explicitly deferred
@@ -78,6 +85,7 @@ But it should know:
 - which ones must be mitigated before or during implementation
 
 ## 7. Implementation can be phased
+The FE should be able to identify a first milestone and first meaningful slices, not only a broad implementation aspiration.
 There should be a build sequence that allows the MVP to be delivered in controlled slices.
 
 If the project still depends on a giant one-shot build plan, readiness is weak.
